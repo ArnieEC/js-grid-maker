@@ -3,26 +3,38 @@ document.addEventListener('DOMContentLoaded', function(){
   // want it as a function, want a 3x3 grid. think about loops, turn 2D into 3D
   // think bout how we will append things to the grid // USE appendChild or appendNode
   const board = document.getElementById('board');
+  const block = grid();
+  const row = document.getElementById("board")
+
+  function random() {
+      let r = Math.floor(Math.random()*255);
+    let g = Math.floor(Math.random()*255);
+    let b = Math.floor(Math.random()*255);
+    let rgb = "rbg(" + r + "," + g + "," + b + ")"
+    }
+
+  // function grid() {
+  //   board.classList.add("row");
+  //   board.classList.add("col");
+  // };
+
+  for (let i = 0; i < 3; i=i+1) {
+
+  }
   
-  const block = grid()
-  const threeByThree = [0, 1, 2, 3, 4, 5, 6, 7, 8]
-
-
-  function grid() {
-    for (let i = 0; i < 3; i=i+1) {
-      board.classList.add("row");
-        for (let j = 0; j < 3; j=j+1) {
-          board.classList.add("col");
-        };
-    };
-  };
+  //     function () => {
+  //         for (let i = 0; i < 3; i=i+1) {
+  // }
 
   
-  
 
+  board.addEventListener("click", () => {
+    board.style.backgroundColor="white"
+  })
+  
+ 
 
 });
-
 
 // const squares = document.getElementsByClassName("innerSquare");
  
